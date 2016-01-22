@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    
+    tools:context=".BlueToothOperate" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton_Light1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:scaleType="fitXY"
+                android:src="@drawable/bluetoothopt_light_selector" />
+
+            <ImageButton
+                android:id="@+id/imageButton_Light2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:layout_marginLeft="5dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/bluetoothopt_light_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton_Light3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="5dip"
+                android:background="@color/green"
+                android:scaleType="fitXY"
+                android:src="@drawable/bluetoothopt_light_selector" />
+
+            <ImageButton
+                android:id="@+id/imageButton_Light4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:layout_marginLeft="5dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/bluetoothopt_light_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton_Light5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:scaleType="fitXY"
+                android:src="@drawable/bluetoothopt_light_selector" />
+
+            <ImageButton
+                android:id="@+id/imageButton_Light6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:scaleType="fitXY"
+                android:src="@drawable/bluetoothopt_light_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton_Light7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="5dip"
+                android:background="@color/green"
+                android:scaleType="fitXY"
+                android:src="@drawable/bluetoothopt_light_selector" />
+
+            <ImageButton
+                android:id="@+id/imageButton_Light8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:layout_marginLeft="5dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/bluetoothopt_light_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton_Beep"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:scaleType="fitXY"
+                android:src="@drawable/bluetoothopt_beep_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

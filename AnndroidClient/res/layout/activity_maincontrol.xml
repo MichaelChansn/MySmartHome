@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/imageButton_Plan1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:scaleType="fitCenter"
+                android:src="@drawable/plan1" />
+            
+             <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dip"
+            android:background="#46576b" />
+
+            <ImageButton
+                android:id="@+id/imageButton_Plan2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:scaleType="fitCenter"
+                android:src="@drawable/plan2" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_gravity="center_horizontal"
+            
+            android:background="#46576b" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/imageButton_BlueTooth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/green"
+                android:scaleType="fitCenter"
+                android:src="@drawable/controlbluetooth" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- android:layout_marginTop="44dp" -->

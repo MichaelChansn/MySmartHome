@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/KS/ECLIPSE/docs/docs/apidocs/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/mina-core-2.0.7.jar" sourcepath="F:/Java Workspace/mina/apache-mina-2.0.4-src/apache-mina-2.0.4/src/mina-core">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/软件安装程序/windows相关/JAVA&amp;android&amp;PHP/Eclipse平台/Mina/docs/docs/apidocs/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.7.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/KS/ECLIPSE/docs/docs/apidocs/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.7.7.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/KS/ECLIPSE/docs/docs/apidocs/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.22-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

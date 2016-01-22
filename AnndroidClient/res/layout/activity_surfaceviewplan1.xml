@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:clickable="false"
+    tools:context=".Surface_View" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <SurfaceView
+            android:id="@+id/surfaceView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:overScrollMode="always"
+            android:scrollbars="horizontal|vertical" />
+
+        <Button
+            android:id="@+id/button_video_stop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:text="打开视频" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_commend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center"
+        android:background="#5fffffff"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/text_commend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:background="@drawable/shape"
+            android:textColor="@color/red"
+            android:cursorVisible="true"
+           
+            android:lines="3" >
+
+            
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_sendcommend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:textColor="@color/red"
+                android:text="SEND" />
+
+            <Button
+                android:id="@+id/button_exitcommend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/red"
+                android:background="@drawable/shape"
+                android:text="EXIT" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/shape"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal|center" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    
+                    android:text="Function:"
+                    
+                    android:textColor="@color/red"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" >
+
+                <CheckBox
+                    android:id="@+id/checkBox_Light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Light" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_Music"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Music" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <CheckBox
+                    android:id="@+id/checkBox_Vibrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="vibrate" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

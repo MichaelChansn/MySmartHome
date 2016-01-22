@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/appExit" android:title="退出程序" android:orderInCategory="0"></item>
+    <item android:id="@+id/appAbout" android:title="关于程序"></item>
+
+
+</menu>

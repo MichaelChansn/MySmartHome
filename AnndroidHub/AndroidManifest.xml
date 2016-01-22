@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ks.anndroidmina"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14"
+        android:targetSdkVersion="18"  />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+     <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
+
+ 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:name="freescale.ks.remoteeye.application.RemoteEyeApplication"
+        android:windowSoftInputMode="adjustResize" 
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name="ks.mina.activitys.Main_Control"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ks.mina.activitys.Camera_View"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_camera__view" >
+        </activity>
+        
+         <activity
+            android:name="freescale.ks.remoteeye.ui.Activity_VideoStream"
+            android:label="@string/app_name" 
+            android:launchMode="singleInstance">
+          
+        </activity>
+        <activity
+            
+            android:name="freescale.ks.remoteeye.ui.PreferencesActivity"
+            android:parentActivityName="android.preference.PreferenceActivity" 
+            android:label="@string/title_activity_preferences"
+            
+            >
+            
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.preference.PreferenceActivity" />
+        </activity>
+        
+         <activity
+            android:name="ks.mina.activitys.bluetooth.ScanDeviceActivity"
+            android:label="@string/scan"
+            android:theme="@android:style/Theme.Dialog" 
+            ></activity>
+        
+       
+        
+        <service android:name="freescale.ks.remoteeye.service.CommendServer" />
+        
+        
+        
+    </application>
+
+</manifest><!--
+  android:windowSoftInputMode="adjustResize"  
+  自动改变输入法覆盖位置，是的被输入文本框不被覆盖
+-->
